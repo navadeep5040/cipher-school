@@ -1,0 +1,25 @@
+public class Main {
+
+    public static int multiply(int a, int b) {
+        return a * b;
+    }
+    public static double multiply(double a, double b) {
+        return a * b;
+    }
+    public static void greet() {
+        System.out.println("Hello!");
+    }
+    public static void greet(String name) {
+        System.out.println("Hello, " + name + "!");
+    }
+public static void main(String[] args) {
+int resultInt = multiply(3, 4);
+        double resultDouble = multiply(2.5, 4.0);
+
+        System.out.println("Multiplying integers: 3 * 4 = " + resultInt);
+        System.out.println("Multiplying doubles: 2.5 * 4.0 = " + resultDouble);
+
+        greet();
+        greet("Alice");
+    }
+}
