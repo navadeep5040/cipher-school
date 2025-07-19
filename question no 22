@@ -1,0 +1,45 @@
+import java.util.Scanner;
+
+public class Main {
+    public static int add(int a, int b) {
+        return a + b;
+    }
+
+
+    public static int maxOfThree(int a, int b, int c) {
+        if (a >= b && a >= c) {
+            return a;
+        } else if (b >= a && b >= c) {
+            return b;
+        } else {
+            return c;
+        }
+    }
+
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
+        System.out.print("Enter first number to add: ");
+        int num1 = scanner.nextInt();
+
+        System.out.print("Enter second number to add: ");
+        int num2 = scanner.nextInt();
+
+        int sum = add(num1, num2);
+        System.out.println("Sum: " + sum);
+
+        System.out.print("Enter first number: ");
+        int a = scanner.nextInt();
+
+        System.out.print("Enter second number: ");
+        int b = scanner.nextInt();
+
+        System.out.print("Enter third number: ");
+        int c = scanner.nextInt();
+
+        int max = maxOfThree(a, b, c);
+        System.out.println("Maximum of the three numbers: " + max);
+
+        scanner.close();
+    }
+}
